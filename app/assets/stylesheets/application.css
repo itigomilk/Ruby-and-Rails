@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+ body {
+    font-family:'Noto Sans JP',sans-serif;
+    background-color:#f6f5f4;
+ }
+ 
+ .side {
+   background-color:#ff838b;
+   width:100px;
+   height:500px;
+   text-align:center;
+ } 
+ 
+ .content {
+   background-color:#b3d874;
+   width:700px;
+   height:500px;
+   text-align:center;
+   margin-left:5px;/*サイドバーとメインコンテンツの間に隙間をあけた*/
+ }
+ 
+ article {
+   display:flex;/*サイドバーとメインコンテンツを横並びにする指定をした*/
+ }

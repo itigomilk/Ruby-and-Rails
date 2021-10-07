@@ -10,7 +10,17 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+  <article>
+    <div class="side">
+      <p>サイドバー</p>
+    </div> 
+    <div class="content">
+      <p>メインコンテンツ</p>
+      <body>
+        <%= yield %>
+      </body>
+    </div>
+  </article>
+
+
 </html>
