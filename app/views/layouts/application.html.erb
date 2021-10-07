@@ -11,15 +11,19 @@
   </head>
 
   <article>
+
     <div class="side">
       <p>サイドバー</p>
+        <h1>ツリー</h1>
+        <%= link_to 'Top', root_path   %><br>
+        <%= link_to 'New Blog', new_blog_path   %><br>
     </div> 
+
     <div class="content">
       <p>メインコンテンツ</p>
-      <body>
         <%= yield %>
-      </body>
     </div>
+    
   </article>
 
 
