@@ -19,7 +19,7 @@
  }
  
  .sidebar {
-   /*background-color:#ff838b;*/
+   background-color:#ff838b;
    width:100px;
    height:500px;
    text-align:center;
@@ -32,7 +32,7 @@
 } 
  
  .main {
-   /*background-color:#b3d874;*/
+   background-color:#b3d874;
    width:700px;
    height:500px;
    text-align:center;
