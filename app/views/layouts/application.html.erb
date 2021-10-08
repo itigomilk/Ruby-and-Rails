@@ -12,15 +12,15 @@
 
   <article>
 
-    <div class="side">
+    <div class="sidebar">
       <p>サイドバー</p>
         <h1>ツリー</h1>
-        <%= link_to 'Yahoo!', "https://www.yahoo.co.jp/"   %><br>
-        <%= link_to 'Top', root_path   %><br>
-        <%= link_to 'New Blog', new_blog_path   %><br>
+        <li class="sidecontents"><%= link_to 'Yahoo!', "https://www.yahoo.co.jp/" %></li>
+        <li class="sidecontents"><%= link_to 'Top', root_path %></li>
+        <li class="sidecontents"><%= link_to 'New Blog', new_blog_path %></li>
     </div> 
 
-    <div class="content">
+    <div class="main">
       <p>メインコンテンツ</p>
         <%= yield %>
     </div>
