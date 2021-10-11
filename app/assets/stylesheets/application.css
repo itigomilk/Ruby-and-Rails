@@ -19,7 +19,7 @@
  }
 
  .w-container{
-   width: min(92%,1166px);
+   width: unquote("min(92%,1166px)");
    margin:auto;
  }
  
@@ -53,7 +53,7 @@
  
  .main {
    background-color:#b3d874;
-   width: max(90%);
+   width: 90%;
    height:500px;
    text-align:center;
    font-family: 'Montserrat', sans-serif;
