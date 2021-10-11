@@ -61,10 +61,18 @@
  }
 
  .hero{
-    height:650px;
-    background-image: url();
-    background-position: center;
-    background-size: cover;
+    display: grid;
+    grid-template-rows:650px;
+ }
+
+ .hero>*{
+    grid-area: 1/1;
+ }
+
+ .hero>img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
  }
 
  .hero-container{
@@ -120,12 +128,12 @@
  
  .main {
    background-color:#b3d874;
-   width: 90%;
+   width: 100%;
    /* height:1000px; */
    text-align:center;
    font-family: 'Montserrat', sans-serif;
-   margin-left:5px;
-   margin-right:5px;
+   /* margin-left:5px;
+   margin-right:5px; */
  }
  .maincontents {
   display:block;

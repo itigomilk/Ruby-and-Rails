@@ -32,12 +32,16 @@
 
   <article>
 
-    <div class="sidebar">
+    <%
+=begin%>
+ <div class="sidebar">
         <li class="sidecontents"><%= link_to 'Yahoo!', "https://www.yahoo.co.jp/" %></li>
         <li class="sidecontents"><%= link_to 'Top', root_path %></li>
         <li class="sidecontents"><%= link_to 'New Blog', new_blog_path %></li>
         <li class="sidecontents"><%= link_to 'ページだよ', index2_path %></li>
-    </div> 
+    </div>  
+<%
+=end%>
 
     <div class="main">
         <%= yield %>
