@@ -36,7 +36,7 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    height:60px;
+    height:112px;
     background-color:#ffffff;
  }
 
@@ -62,7 +62,7 @@
 
  .hero{
     display: grid;
-    grid-template-rows:650px;
+    grid-template-rows:700px;
  }
 
  .hero>*{
@@ -112,7 +112,7 @@
  .sidebar {
     background-color:#ff838b;
     width: 100px;;
-    height:500px;
+    height:650px;
     font-family: 'Montserrat', sans-serif;
     text-align:center;
     margin-left:5px;
