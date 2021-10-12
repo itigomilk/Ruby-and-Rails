@@ -28,7 +28,7 @@
         </button>
         <nav class="menu">
           <ul>
-            <li><%= link_to "ホーム",index2_path%>
+            <li><%= link_to "ホーム",root_path%>
             <li><%= link_to "サービス案内",content_path%>
             <li><%= link_to "お問い合わせ","#"%>
           </ul>
@@ -38,17 +38,6 @@
   </head>
 
   <article>
-
-    <%
-=begin%>
- <div class="sidebar">
-        <li class="sidecontents"><%= link_to 'Yahoo!', "https://www.yahoo.co.jp/" %></li>
-        <li class="sidecontents"><%= link_to 'Top', root_path %></li>
-        <li class="sidecontents"><%= link_to 'New Blog', new_blog_path %></li>
-        <li class="sidecontents"><%= link_to 'ページだよ', index2_path %></li>
-    </div>  
-<%
-=end%>
 
     <div class="main">
         <%= yield %>
