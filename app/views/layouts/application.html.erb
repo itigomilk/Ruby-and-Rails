@@ -21,23 +21,18 @@
         <div class="site">
           <%= link_to image_tag("home.svg",size:"36x36", alt: "Webapp"),root_path%> 
         </div>
-
-        <button class="menubtn">
-          <i class="fas fa-search"></i>
-          <span class="sr-only">SEARCH</span>
-        </button>
-        <button class="menubtn">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="sr-only">CART</span>
-        </button>
-        <button class="menubtn">
-          <i class="fas fa-sign-in-alt"></i>
-          <span class="sr-only">SIGNIN</span>
-        </button>
-        <button class="menubtn">
-          <i class="fas fa-bars"></i>
+        <button class="menubtn" onClick="document.querySelector('html').classList.toggle('open')">
+          <i class="fa fa-bars"></i>
+          <i class="fa fa-times"></i>
           <span class="sr-only">MENU</span>
         </button>
+        <nav class="menu">
+          <ul>
+            <li><%= link_to "ホーム",index2_path%>
+            <li><%= link_to "サービス案内",content_path%>
+            <li><%= link_to "お問い合わせ","#"%>
+          </ul>
+        </nav>
       </div>
     </header>
   </head>
@@ -60,6 +55,42 @@
     </div>
     
   </article>
-
+  <footer class="footer">
+    <div class="footer-container w-container">
+      <div class="footer-site">
+        <%= link_to image_tag("home.svg",size:"26x26", alt: "Webapp"),root_path%>
+      </div>
+      <ul class="footer-sns">
+        <li>
+          <%= link_to "#" do %>
+            <i class="fab fa-twitter"></i>
+            <span class="sr-only">Twitter</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "#" do %>
+            <i class="fab fa-facebook-f"></i>
+            <span class="sr-only">Facebook</span>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "#" do %>
+            <i class="fab fa-instagram"></i>
+            <span class="sr-only">Instagram</span>
+          <% end %>
+        </li>
+      </ul>
+      <ul class="footer-menu">
+        <li><%= link_to "会社概要","#"%></li>
+        <li><%= link_to "特定商取引法","#"%></li>
+        <li><%= link_to "個人情報の取り扱い","#"%></li>
+        <li><%= link_to "サービスの案内","content"%></li>
+        <li><%= link_to "お問い合わせ","contact"%></li>
+      </ul>
+      <div class="footer-copy">
+        @Boards Production
+      </div>
+    </div>
+</footer>
 
 </html>
