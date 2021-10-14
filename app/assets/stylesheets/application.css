@@ -179,7 +179,7 @@ img{
 @media(max-width:767px){
   .menu{
     position: fixed;
-    inset: 0 -100% 0 100%;
+    inset: 0 -50% 0 100%;
     z-index:100;
     background-color:#4e483ae6;
     transition: transform 0.3s;
@@ -203,7 +203,7 @@ img{
     justify-content: center;
     align-items: center;
     height:100%;
-    gap:40px;
+    gap:30px;
     color:#ffffff;
   }
 }
@@ -282,12 +282,6 @@ img{
   font-size: clamp(40px,5.2vw,70px);
   min-height: 0vw;
   font-weight: 300;
-}
-
-.heading span{
-  display:block;
-  color:#666666;
-  font-size: 18px;
 }
 
 .heading-decoration{
@@ -502,4 +496,9 @@ img{
 }
 .flex{
   display:flex;
+}
+.lasted{
+  display:block;
+  color:#666666;
+  font-size: 18px;
 }
