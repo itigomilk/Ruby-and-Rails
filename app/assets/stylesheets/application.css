@@ -484,6 +484,7 @@ img{
 .tabpage span{
   display:block;
 }
+
 .decoration::after{
   display:block;
   content:'';
@@ -491,4 +492,14 @@ img{
   border-top: solid 1px #b72661;
   margin-top: 0.1em;
   margin-bottom: 0.1em;
+}
+.description{
+  display: flex;
+  font-size:20px;
+  color:#1100ff;
+  align-items: flex-end;
+  padding: 0 10px 0 10px;
+}
+.flex{
+  display:flex;
 }
