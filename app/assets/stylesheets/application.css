@@ -508,14 +508,14 @@ img{
   }
   }
 
-
 .description{
   display: flex;
   font-size:20px;
   color:#0099ff;
   align-items: flex-end;
-  padding: 0 10px 0 10px;
+  padding: 10px 0;
 }
+
 .flex{
   display:flex;
 }
